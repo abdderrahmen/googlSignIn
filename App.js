@@ -15,8 +15,14 @@ export default function App() {
         Hello World
       </Text>
 
-     
-
+      <GoogleSigninButton
+       style={{ width: 192, height: 48 }}
+       size={GoogleSigninButton.Size.Wide}
+       color={GoogleSigninButton.Color.Dark}
+       onPress={signIn}
+       //disabled={this.state.isSigninInProgress}
+      />
+      
     </View>
   );
 }
